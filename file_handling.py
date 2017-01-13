@@ -17,7 +17,7 @@ if not os.path.exists(home_path + os.sep + dir_name):
 os.chdir(dir_name)
 f_path = os.getcwd() + os.sep + 'log.txt'
 
-with open(f_path, 'rw+') as fh:
+with open(f_path, 'w+') as fh:
     os.chmod(f_path, 436)
     print 'File mode changed successfully!!'
     fh.write('Hi, \nThis is Shivendra Singh, \nAnd I have done the assignment.\n')
